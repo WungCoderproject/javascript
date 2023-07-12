@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>끝말잇기</title>
+</head>
+<body>
+    <div> <span id="order"> 1</span>번째 참가자</div>
+    <div> 제시어:<span id="word"></span> </div>
+    <input type="text">
+    <button >입력</button>
+    <button class="btn">버튼2</button>
+    <button class="btn">버튼3</button>
+    <script>
+        const number = parseInt(prompt('몇 명이 참가하나요'),10)
+        alert(number)
+        const yesOrNo = confirm('맞나요?')
+
+        //document.querySelector('#word')//선택자로 사용 이렇게 되면 word를 사용할 수 있음 
+        document.querySelectorAll('.btn')// 2개를 사용하고 싶다 그러면 querySelectorAll
+        //class명이 btn인것을 전부 가져오고 싶다면 querySelectorAll 을 사용하자
+        // const $span = document.querySelector('div span'); div의 자손인 span을 찾아라 
+        //    <div> <span id="order"> 1</span>번째 참가자</div> 이게 될거야 
+        //근데 이렇게 복잡하게 안하고 id주면 됨 그냥
+    </script>
+</body>
+</html>

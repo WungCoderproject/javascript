@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BV</title>
+</head>
+<body>
+    <div> <span id="order"> 1</span>번째 참가자</div>
+    <div> 제시어:<span id="word"></span> </div>
+    <input type="text">
+    <button >입력</button>
+    <button class="btn">버튼2</button>
+    <button class="btn">버튼3</button>
+    <script>
+        const number = (prompt('시료는?'),10)
+        alert(number)
+        const yesOrNo = confirm('갯수가맞나요?')
+
+        document.querySelector('input').addEventListener('input',function(event){
+        console.log('글자 입력됨');
+        })
+        //querySelector로 태그를 가져오고 이벤트를 입힌다.
+
+   document.querySelector('button').addEventListener('click',function(){
+    console.log('버튼 클릭됨');
+
+})
+    </script>
+</body>
+</html>
+<!-- addeventlistener 붙이기 -->
+<!--클릭을하고 난 뒤 연이어 실행되는 함수가 콜백함수-->
+<!--    document.querySelector('button').addEventListener('click',function(){
+      click 하고 난 다음에 실행되는 함수라 콜백함수 이름이 없는 함수라서 익명 함수라고도 함 -->
+
+      <!-- 함수를 아예 뺴서 선언했다면 
+    ('click',function() function 자리에 함수이름이 들어가도 상관없다.
+    -->
+
+    <!-- document.querySelector('input').addEventListener('input',function(event){
+        console.log('글자 입력됨',event.target.value); -> 사용자가 잆력한 값이나옴
+        
+    })  -->
